@@ -114,3 +114,48 @@ document.write('<br>');
 document.write(valor1 <= valor2);
 document.write('<br>');
 document.write(valor1 >= valor2);
+
+
+//cadenas de texto
+
+var cadena;
+cadena = `esto es texto en una cadena.`;
+
+document.write(`cadena: ` + cadena); 
+// se puede dividir la dadena con el br o con el \
+
+
+//string
+
+
+var palabra= `Javascript`;
+document.write(`La palabra es : `, palabra);
+document.write('<br>');
+document.write(`Cantidad de letras: `, palabra.length);
+document.write('<br>');
+document.write(`ver los primeros 4 caracteres del texto: `, palabra.slice(0,4));
+document.write('<br>');
+document.write(`ver los primeros 4 caracteres del texto: `, palabra.substring(0,5));
+
+var saludo = `Hola a todos los chicos`;
+saludo = saludo.replace(`Hola`, `Adios`);
+document.write(saludo);
+document.write('<br>');
+
+
+//Poner en MAyusculas
+document.write(`Mayusculas: `, palabra.toUpperCase());
+document.write('<br>');
+
+//Poner en Minusculas
+document.write(`Minusculas: `, palabra.toLowerCase());
+document.write('<br>');
+
+//unir texto
+var curso = `Curso de `;
+document.write(`Unir palabras: `, curso.concat(palabra));
+document.write('<br>');
+
+// arrays
+
+
