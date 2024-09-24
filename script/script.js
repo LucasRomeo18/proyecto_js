@@ -114,3 +114,19 @@ document.write('<br>');
 document.write(valor1 <= valor2);
 document.write('<br>');
 document.write(valor1 >= valor2);
+
+//Funciones matemáticas
+
+var precioA = Math.round(399.54);  // redondea a partir de .5
+document.write('precio redondeado:', precioA);
+document.write('<br>');
+
+var precioA = Math.ceil(399.54); //redondea sin importar el decimal para arriba
+document.write('precio redondeado:', precioA);
+document.write('<br>');
+
+var precioA = Math.floor(399.54); //redondea sin importar el decimal para abajo
+document.write('precio redondeado:', precioA);
+document.write('<br>');
+
+//etc......
