@@ -129,8 +129,6 @@ var precioA = Math.floor(399.54); //redondea sin importar el decimal para abajo
 document.write('precio redondeado:', precioA);
 document.write('<br>');
 
-//etc......
-
 //cadenas de texto
 
 var cadena;
