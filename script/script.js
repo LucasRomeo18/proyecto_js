@@ -170,5 +170,91 @@ document.write(`Unir palabras: `, curso.concat(palabra));
 document.write('<br>');
 
 // arrays
+var numeros = [];
+numeros = [14,34,56,67,33,88,90,2111];// mismos metodos para palabras
+document.write('Elementos: ', numeros);
+document.write('<br>');
+document.write('Elemento número 5: ', numeros[5]);
+numeros[0] = 923;
 
 
+//metodos de Arrays
+    // cantidad de elementos
+    document.write('Cantidad: ', numeros.length());
+    document.write('<br>');
+
+    //ultimo elemento
+    document.write('ultimo elemento: ', numeros[numeros.length-1]);
+    document.write('<br>');
+
+    //tipo texto
+    document.write('En string: ', numeros.toString());
+    document.write('<br>');
+
+    //unir tipos de arrays
+    var letritas = ['a','b','c','d',];
+    var numeros2 = [1,2,3,4];
+
+    document.write('Alfanumerico: ', letritas.concat(numeros2));
+    document.write('<br>');
+
+    //borrar el ultimo elemento
+    numeros.pop;
+    document.write(numeros);
+    document.write('<br>');
+
+    //agregar como el ultimo elemento
+    numeros.push(500);
+    document.write(numeros);
+    document.write('<br>');
+
+    //eliminar primer elemento
+    numeros.shift();
+    document.write(numeros);
+    document.write('<br>');
+
+    //insertar como primer elemento
+    numeros.unshift(1000);
+    document.write(numeros);
+    document.write('<br>');
+
+    //eliminar elementos a partir de un punto
+    numeros.splice(2,3);
+    document.write(numeros);
+    document.write('<br>');
+
+    //copiar un arrays
+    var cantidades = [100,200,300,400,500];
+    var copia = cantidades.slice(1,4);
+    document.write("Array copia: ", copia);
+    document.write('<br>');
+
+    //ordenado alfabeticamente
+    var objetos = ["auto", 'botella', 'planeta', 'zorro', 'jugo'];
+    document.write(objetos);
+    document.write('<br>');
+    document.write(objetos.sort());// la funcion sort los ordena alfabeticamente
+    document.write('<br>');
+    document.write(objetos.reverse());// los trae de manera contraria a como estan en el arrays
+    document.write('<br>');
+
+
+//Condicionales
+var uno, dos;
+uno = prompt("Ingrese su nombre: ");
+dos = prompt("ingrese su edad: ");
+dos = parseInt(dos);
+
+    if (uno >=18) {
+        document.write("Bienvenido sos mayor!!!!", dos);
+    }
+    else{
+        if (uno < 18){
+        document.write(nombre, 'Eres menor de edad perro!!!!');
+        }
+        else{
+            document.write('No ha ingrersado nada.....');
+        }
+    }
+
+//operadores logicos (and, or)
