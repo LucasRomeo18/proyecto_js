@@ -1,3 +1,10 @@
+// crea un svg desde java
+        let img = document.createElement('img');
+        img.src = '/image/meteocons--dust-wind.svg';
+        document.body.appendChild(img);
+        document.write('<br>');
+
+//aprendiendo javascript
 var nombre;
 nombre ='Lucas';
 cantidad = 25;
