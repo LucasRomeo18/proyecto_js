@@ -414,5 +414,49 @@ for (let f in palabra){
 }
 document.write(`cantidad de vocales: `, vocal);
 
-//break
+//break - continue
 
+for(let f = 0; f < 10; f++){
+    document.write(f);
+    document.write('<br>');
+    if(f==3){
+        document.write('Aqui es la vuelta: ', f);
+        document.write('<br>');
+        break;
+    }
+}
+
+let palabrita = 'javascript';
+let resultado = '';
+
+for(let f in palabrita){
+    if(palabrita[f]=='a'){
+        continue;
+    }
+    else{
+        resultado += palabrita[f];
+    }
+}
+document.write(resultado);
+
+// funciones - functions
+
+    // funciones declaraticas
+
+    function saludar(){
+        document.write('Hola a todos');
+    }
+    saludar();
+
+    function saludar(){
+        alert('Hola a todos');
+    }
+    saludar();
+
+    function despedir(){
+        document.write('Adios a todos');
+    }
+    saludar();
+    document.write('<br>');
+    despedir();
+    
