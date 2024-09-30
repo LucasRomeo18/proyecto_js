@@ -459,4 +459,22 @@ document.write(resultado);
     saludar();
     document.write('<br>');
     despedir();
-    
+
+    // funciones con parametros
+    let result;
+    function suma(qw,er) {
+        qw = parseInt(qw);
+        er = parseInt(er);
+        result = qw + er;
+        alert('Resultado: '+ result);
+    }
+    suma(5, 19);
+
+    // funciones con return
+    let resulta;
+    function suma(a , b){
+        resulta = a + b;
+        return resulta;
+        
+    }
+    document.write(suma(30, 90));
