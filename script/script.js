@@ -265,3 +265,154 @@ dos = parseInt(dos);
     }
 
 //operadores logicos (and, or)
+
+let contiente, edad;
+contiente = prompt(`Ingrese Su continete....`);
+edad = prompt(`Ingrese su edad....`);
+
+if (contiente == `America` && edad >=18){ //esto en and
+    document.write(`Eres un adulto Americano.`);
+}else{
+    document.write(`o no eres adulto, o no eres americano.`);
+}
+
+let dia, mes, anio;
+dia = prompt(`Ingrerse dia...`);
+mes = prompt(`Ingrerse mes...`);
+anio = prompt(`Ingrerse año...`);
+
+if (mes == 1 || mes == 2 || mes == 3){ //esto es or
+    document.write(`Pertenece al primer trimestre!..`);
+}else{
+    document.write(`No pertenece al primer trimestre`);
+}
+
+
+//switch case
+
+let valor;
+valor = parseInt(prompt(`Ingrese valor entre 1 y 3`));
+
+switch (valor) {
+    case 1:
+        document.write(`Ingreso uno`);
+        break;
+    case 2:
+        document.write(`Ingreso dos.`);
+        break;
+    case 3:
+        document.write(`Ingreso tres.`);
+        break;
+    default:
+        document.write(`no es número valido`);
+        break;
+}
+
+
+let color
+color = prompt(`Ingrese un color: Rojo, Verde o Azul....`);
+
+switch (color) {
+    case `rojo` || `Rojo`:
+        document.write(`ingreso rojo.`);
+        break;
+    case `azul` || `Azul`:
+        document.write(`ingreso azul.`);
+        break;
+    case `verde` || `Verde`:
+        document.write(`ingreso verde.`);
+        break;
+    default:
+        document.write(`no ingreso color.`);
+        break;
+}
+
+
+//while (es un bucle)
+
+let f = 1;
+while (f <= 10) {
+    document.write(`vuelta no. `, f);
+    document.write(`<br>`);
+    f++;
+}
+document.write(`Fin del bucle`);
+
+let p = 1;
+let suma = 0;
+let Valor;
+
+while (p <= 5){
+    valor = parseInt(prompt(`ingrese valor..`));
+    suma  = suma + valor;
+    p++;
+}
+document.write(`La suma es: `, suma, `<br>`);
+
+
+// do - while
+
+let po;
+
+do {
+    po = parseInt(prompt(`ingrese valor 1 para salir....`));
+    document.write(`ingreso valor: `, po);
+    document.write(`<br>`);
+} while ( po != 1);
+document.write(`fin del bucle.`);
+
+let usuario, clave, control;
+control = 0;
+usuario = prompt(`ingrese usuario...`);
+clave = prompt(`Ingrese su clave...`);
+
+do {
+    if(clave != `1234`){
+        clave = prompt(`clave incorrecta\n` + `intente de nuevo`);
+        control = 0;
+    }
+    else{
+        control = 1;
+    }
+} while (control != 1);
+document.write(`ACCESO CORRENTO!`);
+
+
+//for
+
+for ( let y=1; y <= 20; y+=2 ){
+    if(f==15){
+        document.write(`aqui el valor es: `, y);
+        document.write(`<br>`);
+    }
+}
+document.write(`FIN DEL BUCLE`);
+document.write(`<br>`);
+
+const frutas = [`manzanas`, `peras`, `uvas`, `naranjas`];
+for(let f = 0; f < frutas.length; f++){
+    document.write(`Fruta: `, f, ` = `, frutas[f]);
+}
+
+// bucle for in
+
+let pala = `Javascript`;
+
+for(let f in palabra){
+    document.write(palabra[f]);
+    document.write(`<br>`);
+
+}
+
+let pal = `murcielago`;
+let vocal = 0;
+
+for (let f in palabra){
+    if (pal[f]==`a` || pal[f]==`e` || pal[f]==`i` || pal[f]==`o` || pal[f]==`u`){
+        vocal++;
+    }
+}
+document.write(`cantidad de vocales: `, vocal);
+
+//break
+
