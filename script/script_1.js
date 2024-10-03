@@ -46,3 +46,16 @@ document.write(homero.nombre);  // trae el nombre en este caso seria homero
 
 // clase date
 
+const fechactual = new Date();
+
+document.write(fechactual); // toda la info de sobre la fecha 
+document.write(`<br>`);
+
+let fecha = new Date();
+document.write(`Ho es: `, fecha.getDate()); // solamente el dia y asi con cada uno
+document.write(`<br>`);
+
+
+
+
+
