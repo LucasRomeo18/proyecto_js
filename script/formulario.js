@@ -31,3 +31,31 @@ function cambiarcolor(){
     document.getElementById(`text2`).value = seleccion.options[seleccion.selectedIndex].text;
     document.getElementById(`text3`).value = seleccion.options[seleccion.selectedIndex].value;
 }
+
+
+
+
+function selection(){
+    let cantidad = 0;
+    
+    if(document.getElementById(`check1`).checked){
+        cantidad++;
+    }
+    if(document.getElementById(`check2`).checked){
+        cantidad++;
+    }
+    if(document.getElementById(`check3`).checked){
+        cantidad++;
+    }
+    if(document.getElementById(`check4`).checked){
+        cantidad++;
+    }if(document.getElementById(`check4`).checked){
+        cantidad++;
+    }
+    if(cantidad == 1){
+        alert(`conoces: `+ cantidad + ` lenguaje`);
+    }else{
+        alert(`conoces: `+ cantidad + ` lenguajes`);
+    }
+    
+}
