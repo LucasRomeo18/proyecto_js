@@ -1,3 +1,14 @@
 body{
     background-color: rgb(138, 138, 138);
 }
+
+
+
+.caja{
+    border-radius: 52px;
+    background: linear-gradient(145deg, #216762, #1c5653);
+    box-shadow:  23px 23px 24px #194f4b, -23px -23px 24px #25716d;
+    height:210px;
+    width: 200px;
+    
+}
