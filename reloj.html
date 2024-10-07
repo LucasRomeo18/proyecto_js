@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/fondo.css">
+    <title>Document</title>
+</head>
+<body onload="comenzarreloj()">
+    <input type="number" id="tiempo">
+    <button onclick="comenzarTiempo()">Alarma</button>
+    <h1 style="color: red;" id="textoreloj">00:00:00</h1>
+    <audio src="sound/alarma.mp3" id="audioalarma" type="audio/mpeg" controls>
+        sonido no Habilitado
+    </audio>
+    <script src="script/set_time_out.js"></script>
+</body>
+</html>
