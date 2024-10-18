@@ -1,0 +1,13 @@
+{
+    "nombre": "Lucas Romeo",
+    "edad": 34,
+    "estudiante": false,
+    "direccion": {
+        "calle": "Avenidad siempreviva",
+        "ciudad": "La Plata"
+    },
+    "telefonos":[
+        "123-456-789",
+        "987-645-321"
+    ]
+}
