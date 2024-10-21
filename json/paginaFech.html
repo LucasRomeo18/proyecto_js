@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON  Fetch</title>
+</head>
+<body>
+    <div id="nombre"></div>
+    <script>
+        let datoJson;
+        fetch("personal.json")
+            .then(res => res.json())   //promesa (es una declaracion que se resuelve con el tiempo) es una operacion asincrona
+            .then((salida) =>{
+                datoJson = salida;
+
+                let elementotexto = document.getElementById("nombre");
+                elementotexto.textContent = datoJson.nombre;
+            })
+            .catch(function(error){    //muestra el error para que no quede la pagina en blanco
+                alert(error)
+            })
+
+    </script>
+</body>
+</html>
