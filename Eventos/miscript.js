@@ -1,14 +1,24 @@
 let boton = document.getElementById("boton1");
+let div1 =document.getElementById("div1");
+let enlace = document.getElementById("enlace1");
 
 
-function mensaje(){
-    alert("Boton Presionado!!!")
+//function mensaje(){
+//   alert("Boton Presionado!!!")
+//}
+//boton.addEventListener("click", mensaje);
+
+function mostrarMensaje(event){
+    alert(event.target);
+    alert(event.currentTarget);
 }
-boton.addEventListener("click", mensaje);
+
+div1.addEventListener("click", mostrarMensaje);
 
 
-
-function mensaje2(){
-    alert(`sun un mouseover`);
+function bloqueoEnlace(event){
+    event.preventDefault();
+    alert("enlace deshabilitado");
 }
-boton.addEventListener("mouseover", mensaje2);
+
+enlace.addEventListener("click", bloqueoEnlace);
