@@ -3,7 +3,7 @@ const numeros = document.querySelectorAll('button');
 
 
 
-//Le asigna un evento de click a cada boton
+//Le asigna un evento de click a cada boton, compara para ver si esta el cero o si aprto el AC para dejar la pantalla en blanco, si apreto el DEL borrar el ultimo caracter del string y por ultimo evalua lo que se encuentra en la pantalla(en este caso hace las operaciones aritmeticas)
 numeros.forEach(boton =>{
     boton.addEventListener('click', function(event){
         let  numero = event.target.value;
@@ -25,13 +25,4 @@ numeros.forEach(boton =>{
         
     });
 })
-
- 
-// esta funcion lo muestra en la consola
-//function mostrarConsola(event){
-//    let numero = event.target.value;
-//    console.log(numero);
-//}
-
-//comento para ver si cambia en el git
 
