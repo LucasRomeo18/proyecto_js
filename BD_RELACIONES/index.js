@@ -49,7 +49,7 @@ mi_conection.query("select * from clientes", function(error,filas){
 
 
 //eliminar registros de la tabla
-mi_conection.query("delete from clientes where idClientes = 1", function(error,resultado){
+mi_conection.query('delete from clientes where idClientes = 1', function(error,resultado){
     if(error) throw error;
     console.log(resultado)
 });
