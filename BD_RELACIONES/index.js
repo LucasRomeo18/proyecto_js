@@ -25,7 +25,7 @@ var mi_conection = mysql.createConnection({
 mi_conection.connect();
 
 //agregar nuevo regsitro
-mi_conection.query('insert into clientes values (2, "Pedro", 2, 123456789, "Calle Primera No 1")', function(error, resultado){
+mi_conection.query('insert into clientes values (1, "Pedro", 1,123456789, "Calle Primera No 1")', function(error, resultado){
     if(error) throw error;
     console.log(resultado)
 });
@@ -37,7 +37,7 @@ mi_conection.query("select * from clientes", function(error, filas){
 });
 
 //modificar registro en la tabla
-mi_conection.query("update clientes set direccion = 'no tiene' where idCliente = 2", function(error,resultado){
+mi_conection.query('update clientes set direccion = "no tiene" where idCliente = 1', function(error,resultado){
     if(error) throw error;
     console.log(resultado)
 });
@@ -49,7 +49,7 @@ mi_conection.query("select * from clientes", function(error,filas){
 
 
 //eliminar registros de la tabla
-mi_conection.query("delete from cliente where idClientes = 2", function(error,resultado){
+mi_conection.query("delete from cliente where idClientes = 1", function(error,resultado){
     if(error) throw error;
     console.log(resultado)
 });
